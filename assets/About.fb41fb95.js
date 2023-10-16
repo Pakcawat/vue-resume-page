@@ -1,0 +1,1 @@
+import{_ as t,o,c as s,a as e}from"./index.a9fcbb5d.js";const a={},c={id:"about-page"},_=e("h1",null,"About",-1),n=e("p",null,"This is the about page",-1),r=[_,n];function i(d,u){return o(),s("main",c,r)}var l=t(a,[["render",i]]);export{l as default};
