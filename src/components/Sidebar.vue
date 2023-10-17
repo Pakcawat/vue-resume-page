@@ -14,19 +14,19 @@
 		<!--url sidebar-->
 		<h3>Menu</h3>
 		<div class="menu">
-			<router-link to="/vue-resume-page/" class="button">
+			<router-link to="/" class="button">
 				<span class="material-icons">home</span>
 				<span class="text">Home</span>
 			</router-link>
-			<router-link to="/vue-resume-page/about" class="button">
+			<router-link to="/about" class="button">
 				<span class="material-icons">description</span>
 				<span class="text">About</span>
 			</router-link>
-			<router-link to="/vue-resume-page/team" class="button">
+			<router-link to="/team" class="button">
 				<span class="material-icons">group</span>
 				<span class="text">Team</span>
 			</router-link>
-			<router-link to="/vue-resume-page/contact" class="button">
+			<router-link to="/contact" class="button">
 				<span class="material-icons">email</span>
 				<span class="text">Contact</span>
 			</router-link>
