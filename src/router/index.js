@@ -5,11 +5,11 @@ const router = createRouter({
 	history: createWebHistory(),
 	routes: [
 		{
-			path: '/',
+			path: '/vue-resume-page/',
 			component: Home
 		},
 		{
-			path: '/about',
+			path: '/vue-resume-page/about',
 			component: () => import('../views/About.vue')
 		},
 	],

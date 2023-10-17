@@ -12,19 +12,19 @@
 
 		<h3>Menu</h3>
 		<div class="menu">
-			<router-link to="/" class="button">
+			<router-link to="/vue-resume-page/" class="button">
 				<span class="material-icons">home</span>
 				<span class="text">Home</span>
 			</router-link>
-			<router-link to="/about" class="button">
+			<router-link to="/vue-resume-page/about" class="button">
 				<span class="material-icons">description</span>
 				<span class="text">About</span>
 			</router-link>
-			<router-link to="/team" class="button">
+			<router-link to="/vue-resume-page/team" class="button">
 				<span class="material-icons">group</span>
 				<span class="text">Team</span>
 			</router-link>
-			<router-link to="/contact" class="button">
+			<router-link to="/vue-resume-page/contact" class="button">
 				<span class="material-icons">email</span>
 				<span class="text">Contact</span>
 			</router-link>
