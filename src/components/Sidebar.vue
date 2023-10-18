@@ -1,12 +1,14 @@
 <template>
 	<aside :class="`${is_expanded ? 'is-expanded' : ''}`">
 		<div class="logo">
-			<img :src="logoURL" alt="Vue" /> 
+			<img :src="logoURL" alt="Vue" />
+			<font-awesome-icon icon="fa-solid fa-user-secret" />
+
 		</div>
 
 		<div class="menu-toggle-wrap">
 			<button class="menu-toggle" @click="ToggleMenu">
-				<span class="material-icons">keyboard_double_arrow_right</span>
+				<span class="material-icons">fast_forward</span>
 			</button>
 		</div>
 
@@ -14,28 +16,37 @@
 		<!--url sidebar-->
 		<h3>Menu</h3>
 		<div class="menu">
-			<router-link to="/" class="button">
-				<span class="material-icons">home</span>
-				<span class="text">Home</span>
-			</router-link>
 			<router-link to="/about" class="button">
 				<span class="material-icons">description</span>
 				<span class="text">About</span>
 			</router-link>
-			<router-link to="/team" class="button">
+			<router-link to="/education" class="button">
+				<span class="material-icons">school</span>
+				<span class="text">Education</span>
+			</router-link>
+			<router-link to="/work-experience" class="button">
 				<span class="material-icons">group</span>
-				<span class="text">Team</span>
+				<span class="text">Work Experience</span>
+			</router-link>
+			<router-link to="/skills" class="button">
+				<span class="material-icons">lightbulb_outline</span>
+				<span class="text">Skills</span>
+			</router-link>
+			<router-link to="/hobbies" class="button">
+				<span class="material-icons">favorite</span>
+				<span class="text">Hobbies</span>
 			</router-link>
 			<router-link to="/contact" class="button">
-				<span class="material-icons">email</span>
+				<span class="material-icons">group</span>
 				<span class="text">Contact</span>
 			</router-link>
 		</div>
 
 		<div class="flex"></div>
-		
+
 		<div class="menu">
 			<router-link to="/settings" class="button">
+
 				<span class="material-icons">settings</span>
 				<span class="text">Settings</span>
 			</router-link>
@@ -93,12 +104,13 @@ aside {
 
 		.menu-toggle {
 			transition: 0.2s ease-in-out;
+
 			.material-icons {
 				font-size: 2rem;
 				color: var(--light);
 				transition: 0.2s ease-out;
 			}
-			
+
 			&:hover {
 				.material-icons {
 					color: var(--primary);
@@ -108,7 +120,8 @@ aside {
 		}
 	}
 
-	h3, .button .text {
+	h3,
+	.button .text {
 		opacity: 0;
 		transition: opacity 0.3s ease-in-out;
 	}
@@ -136,6 +149,7 @@ aside {
 				color: var(--light);
 				transition: 0.2s ease-in-out;
 			}
+
 			.text {
 				color: var(--light);
 				transition: 0.2s ease-in-out;
@@ -144,7 +158,8 @@ aside {
 			&:hover {
 				background-color: var(--dark-alt);
 
-				.material-icons, .text {
+				.material-icons,
+				.text {
 					color: var(--primary);
 				}
 			}
@@ -153,7 +168,8 @@ aside {
 				background-color: var(--dark-alt);
 				border-right: 5px solid var(--primary);
 
-				.material-icons, .text {
+				.material-icons,
+				.text {
 					color: var(--primary);
 				}
 			}
@@ -175,13 +191,14 @@ aside {
 
 		.menu-toggle-wrap {
 			top: -3rem;
-			
+
 			.menu-toggle {
 				transform: rotate(-180deg);
 			}
 		}
 
-		h3, .button .text {
+		h3,
+		.button .text {
 			opacity: 1;
 		}
 
@@ -200,5 +217,4 @@ aside {
 		position: absolute;
 		z-index: 99;
 	}
-}
-</style>
+}</style>
