@@ -24,8 +24,8 @@
 				<span class="material-icons">school</span>
 				<span class="text">Education</span>
 			</router-link>
-			<router-link to="/work-experience" class="button">
-				<span class="material-icons">group</span>
+			<router-link to="/work_experience" class="button">
+				<span class="material-icons">work</span>
 				<span class="text">Work Experience</span>
 			</router-link>
 			<router-link to="/skills" class="button">
