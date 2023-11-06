@@ -1,200 +1,124 @@
 <template>
-	<aside :class="`${is_expanded ? 'is-expanded' : ''}`">
+	<ul>
+		<li><router-link to="/about" class="button"><span class="material-icons">description</span><span
+					class="text">About</span></router-link></li>
+		<li><router-link to="/education" class="button"> <span class="material-icons">school</span>
+				<span class="text">Education</span></router-link></li>
+		<li><router-link to="/work_experience" class="button"> <span class="material-icons">work</span>
+				<span class="text">Work Experience</span></router-link></li>
+		<li><router-link to="/skills" class="button"> <span class="material-icons">lightbulb_outline</span>
+				<span class="text">Skills</span></router-link></li>
+		<li><router-link to="/hobbies" class="button"> <span class="material-icons">favorite</span>
+				<span class="text">Hobbies</span></router-link></li>
+		<li><router-link to="/contact" class="button"> <span class="material-icons">group</span>
+				<span class="text">Contact</span></router-link></li>
+	</ul>
+	<aside>
 		<div class="logo">
 			<img :src="logoURL" alt="Vue" />
-			<font-awesome-icon icon="fa-solid fa-user-secret" />
-
+			<h3>PAKCAWAT ISSARAWISARNPOL</h3>
 		</div>
-
-		<div class="menu-toggle-wrap">
-			<button class="menu-toggle" @click="ToggleMenu">
-				<span class="material-icons">fast_forward</span>
-			</button>
-		</div>
-
 
 		<!--url sidebar-->
-		<h3>Menu</h3>
 		<div class="menu">
-			<router-link to="/about" class="button">
-				<span class="material-icons">description</span>
-				<span class="text">About</span>
-			</router-link>
-			<router-link to="/education" class="button">
-				<span class="material-icons">school</span>
-				<span class="text">Education</span>
-			</router-link>
-			<router-link to="/work_experience" class="button">
-				<span class="material-icons">work</span>
-				<span class="text">Work Experience</span>
-			</router-link>
-			<router-link to="/skills" class="button">
-				<span class="material-icons">lightbulb_outline</span>
-				<span class="text">Skills</span>
-			</router-link>
-			<router-link to="/hobbies" class="button">
-				<span class="material-icons">favorite</span>
-				<span class="text">Hobbies</span>
-			</router-link>
-			<router-link to="/contact" class="button">
-				<span class="material-icons">group</span>
-				<span class="text">Contact</span>
-			</router-link>
+			<div class="item"> <router-link to="/about" class="button">
+					<span class="material-icons">description</span>
+					<span class="text">About</span>
+				</router-link></div>
+			<div class="item"> <router-link to="/education" class="button">
+					<span class="material-icons">school</span>
+					<span class="text">Education</span>
+				</router-link></div>
+			<div class="item"> <router-link to="/work_experience" class="button">
+					<span class="material-icons">work</span>
+					<span class="text">Work Experience</span>
+				</router-link></div>
+			<div class="item"> <router-link to="/skills" class="button">
+					<span class="material-icons">lightbulb_outline</span>
+					<span class="text">Skills</span>
+				</router-link> </div>
+			<div class="item"> <router-link to="/hobbies" class="button">
+					<span class="material-icons">favorite</span>
+					<span class="text">Hobbies</span>
+				</router-link></div>
+
 		</div>
 
-		<div class="flex"></div>
-
-		<div class="menu">
-			<router-link to="/settings" class="button">
-
-				<span class="material-icons">settings</span>
-				<span class="text">Settings</span>
-			</router-link>
-		</div>
 	</aside>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import logoURL from '../assets/logo.png'
+import logoURL from '../assets/2506.jpg'
 
-const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
-
-const ToggleMenu = () => {
-	is_expanded.value = !is_expanded.value
-	localStorage.setItem("is_expanded", is_expanded.value)
-}
 </script>
 
 <style lang="scss" scoped>
+
+ul {
+	z-index: 99;
+	list-style-type: none;
+	padding: 10px;
+	margin: 0;
+	overflow: hidden;
+	background-color: rgb(33, 34, 41);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: none;
+
+}
+
+li {
+	float: left;
+
+}
+
+li a {
+	display: block;
+	color: var(--light);
+	text-decoration: none;
+	padding: 7px;
+}
+
+li a:hover:not(.active) {
+	background-color: #636363;
+}
+
+
 aside {
+	position: fixed;
+	z-index: 99;
 	display: flex;
 	flex-direction: column;
-
-	background-color: var(--dark);
+	background-color: rgb(33, 34, 41);
 	color: var(--light);
+	width: var(--sidebar-width);
 
-	width: calc(2rem + 32px);
+	//width: calc(2rem + 32px);
 	overflow: hidden;
 	min-height: 100vh;
-	padding: 1rem;
-
+	padding: 0;
+	margin: 0;
 	transition: 0.2s ease-in-out;
 
-	.flex {
-		flex: 1 1 0%;
+	div .item:hover:not(.active) {
+		background-color: #636363;
 	}
 
 	.logo {
 		margin-bottom: 1rem;
 
 		img {
-			width: 2rem;
-		}
-	}
-
-	.menu-toggle-wrap {
-		display: flex;
-		justify-content: flex-end;
-		margin-bottom: 1rem;
-
-		position: relative;
-		top: 0;
-		transition: 0.2s ease-in-out;
-
-		.menu-toggle {
-			transition: 0.2s ease-in-out;
-
-			.material-icons {
-				font-size: 2rem;
-				color: var(--light);
-				transition: 0.2s ease-out;
-			}
-
-			&:hover {
-				.material-icons {
-					color: var(--primary);
-					transform: translateX(0.5rem);
-				}
-			}
-		}
-	}
-
-	h3,
-	.button .text {
-		opacity: 0;
-		transition: opacity 0.3s ease-in-out;
-	}
-
-	h3 {
-		color: var(--grey);
-		font-size: 0.875rem;
-		margin-bottom: 0.5rem;
-		text-transform: uppercase;
-	}
-
-	.menu {
-		margin: 0 -1rem;
-
-		.button {
-			display: flex;
-			align-items: center;
-			text-decoration: none;
-
-			transition: 0.2s ease-in-out;
-			padding: 0.5rem 1rem;
-
-			.material-icons {
-				font-size: 2rem;
-				color: var(--light);
-				transition: 0.2s ease-in-out;
-			}
-
-			.text {
-				color: var(--light);
-				transition: 0.2s ease-in-out;
-			}
-
-			&:hover {
-				background-color: var(--dark-alt);
-
-				.material-icons,
-				.text {
-					color: var(--primary);
-				}
-			}
-
-			&.router-link-exact-active {
-				background-color: var(--dark-alt);
-				border-right: 5px solid var(--primary);
-
-				.material-icons,
-				.text {
-					color: var(--primary);
-				}
-			}
-		}
-	}
-
-	.footer {
-		opacity: 0;
-		transition: opacity 0.3s ease-in-out;
-
-		p {
-			font-size: 0.875rem;
-			color: var(--grey);
-		}
-	}
-
-	&.is-expanded {
-		width: var(--sidebar-width);
-
-		.menu-toggle-wrap {
-			top: -3rem;
-
-			.menu-toggle {
-				transform: rotate(-180deg);
-			}
+			display: inline-block;
+			width: 90%;
+			height: 90%;
+			border-radius: 60%;
+			margin: 3rem 2rem 2rem 1rem;
+			padding: 10px;
+			border-style: solid;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
 		}
 
 		h3,
@@ -202,19 +126,54 @@ aside {
 			opacity: 1;
 		}
 
+		h3 {
+			color: white;
+			font-size: 0.9875rem;
+			margin-bottom: 0.5rem;
+			text-transform: uppercase;
+			margin: 0rem -2rem 3rem 2rem;
+
+		}
+	}
+
+	.material-icons {
+		margin-right: 1rem;
+	}
+
+	.menu {
+		margin: 2rem -1rem 2rem 0rem;
+
+
 		.button {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			margin-bottom: 10px;
+
+			transition: 0.2s ease-in-out;
+			padding: 0.5rem 1rem;
+
 			.material-icons {
-				margin-right: 1rem;
+				font-size: 2rem;
+				color: white;
+				transition: 0.2s ease-in-out;
+			}
+
+			.text {
+				color: var(--light);
+				transition: 0.2s ease-in-out;
 			}
 		}
+	}
+}
 
-		.footer {
-			opacity: 0;
-		}
+@media screen and (max-width: 700px) {
+	aside {
+		display: none;
 	}
 
-	@media (max-width: 1024px) {
-		position: absolute;
-		z-index: 99;
+	ul {
+		display: inline-block;
 	}
-}</style>
+}
+</style>

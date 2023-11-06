@@ -1,15 +1,17 @@
 <template>
 	<div class="app">
-		<!-- Sidebar -->
-		<Sidebar />
-
-		<!-- Content -->
+		<div class="sidebar">
+			<!-- Sidebar -->
+			<Sidebar />
+		</div>
 		<router-view />
 	</div>
 </template>
 
 <script setup>
 import Sidebar from './components/Sidebar.vue'
+
+
 </script>
 
 <style lang="scss">
@@ -23,23 +25,9 @@ import Sidebar from './components/Sidebar.vue'
 	--sidebar-width: 300px;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Fira sans', sans-serif;
-}
 
 body {
 	background: var(--light);
-}
-
-button {
-	cursor: pointer;
-	appearance: none;
-	border: none;
-	outline: none;
-	background: none;
 }
 
 .app {
@@ -53,5 +41,6 @@ button {
 			padding-left: 6rem;
 		}
 	}
+
 }
 </style>
