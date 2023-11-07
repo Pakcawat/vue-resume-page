@@ -3,7 +3,7 @@
         <div class="item">
             <p class="text-work-header" style="font-size: 40px;text-decoration: underline;">SKILLS
             </p>
-            <hr>
+
         </div>
 
         <p>
@@ -53,7 +53,10 @@
     align-items: stretch;
     column-gap: 20px;
     row-gap: 20px;
-    margin: 10% 0% 10% 30%;
+    margin: 3% 0% 0% 20%;
+    background-color:  rgb(150, 234, 255);
+    border: 5px solid rgb(0, 0, 0);
+    padding: 100px;
 
 }
 

@@ -1,7 +1,5 @@
 <template>
     <div class="flex-box">
-
-
         <div class="item">
             <div class="resume_right">
                 <div class="resume_item resume_about">
@@ -140,7 +138,7 @@ hr {
     box-sizing: border-box;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 10% 10% 10% 20%;
+    margin: 5% 10% 0% 20%;
 
 }
 
