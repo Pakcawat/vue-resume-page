@@ -149,6 +149,8 @@ hr {
     box-sizing: border-box;
     width: 100%;
     padding: 5px;
+    font-family: 'Lato';
+	font-size: 20px;
 
 }
 

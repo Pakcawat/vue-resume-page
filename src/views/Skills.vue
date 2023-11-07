@@ -9,6 +9,8 @@
         <p>
         <div class="content">
             <p class="text-work-header">Experience programming language</p>
+            <hr>
+
             <p class="text-work">Css</p>
             <p class="text-work">Java</p>
             <p class="text-work">Node.js</p>
@@ -19,6 +21,8 @@
         </div>
         <div class="content">
             <p class="text-work-header">Experience databases</p>
+            <hr>
+
             <p class="text-work">MySQL</p>
             <p class="text-work">Firebase</p>
             <p class="text-work">MongoDB</p>
@@ -26,6 +30,8 @@
         </div>
         <div class="content">
             <p class="text-work-header">Experience framework</p>
+            <hr>
+
             <p class="text-work">Git</p>
             <p class="text-work">VueJS</p>
             <p class="text-work">Django</p>

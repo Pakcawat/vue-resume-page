@@ -16,7 +16,7 @@
 	<aside>
 		<div class="logo">
 			<img :src="logoURL" alt="Vue" />
-			<h3>PAKCAWAT ISSARAWISARNPOL</h3>
+			<h3 style="font-size: 18px; margin-left: 6%;" >PAKCAWAT ISSARAWISARNPOL</h3>
 		</div>
 
 		<!--url sidebar-->
@@ -55,6 +55,7 @@ import logoURL from '../assets/2506.jpg'
 <style lang="scss" scoped>
 
 ul {
+	
 	z-index: 99;
 	list-style-type: none;
 	padding: 10px;

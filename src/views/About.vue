@@ -25,7 +25,7 @@
 			</p>
 		</div>
 		<div class="item-About">
-			<p class="text-work-About">Hello ,My name is Pakcawt Issarawisarnpol ,I'am graduated with a bachelor's
+			<p class="text-work-About">&nbsp; Hello ,My name is Pakcawt Issarawisarnpol ,I'am graduated with a bachelor's
 				degree in
 				computer
 				engineering from Thammasat University.

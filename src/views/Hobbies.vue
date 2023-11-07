@@ -28,6 +28,10 @@
             <p class="text-work-header">Read novel and book</p>
             <p class="text-work">I read fantasy novels, detective novels, and martial arts novels. The books I read are about history.</p>
         </div>
+        <div class="item">
+            <p class="text-work-header">Code challenge</p>
+            <p class="text-work">I am write code at Codewar and leetcode When I feel like I've forgotten something</p>
+        </div>
 
     </div>
 </template>
