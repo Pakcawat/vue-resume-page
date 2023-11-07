@@ -15,7 +15,7 @@
                                 <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">PERSONAL PROJECT</div>
                                 <div class="item_resume_right">
                                     <p class="text-work-header">Responsibilities: IT Developer</p>
-                                    <p class="text-work">Local website with spring boot framework. A website that has a
+                                    <p class="text-work">&nbsp; Local website with spring boot framework. A website that has a
                                         system for registering and
                                         verifying your
                                         identity via email and has a function that can store user data in SQL, show data for
@@ -27,7 +27,7 @@
                                 <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">INTERNSHIP</div>
                                 <div class="item_resume_right">
                                     <p class="text-work-header">Responsibilities: IT Developer</p>
-                                    <p class="text-work">The work is a find the coordinates of the various stores from the
+                                    <p class="text-work">&nbsp; The work is a find the coordinates of the various stores from the
                                         API and develop a website
                                         that can show
                                         the
@@ -43,7 +43,7 @@
                                 <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">DURING UNIVERSITY</div>
                                 <div class="item_resume_right">
                                     <p class="text-work-header">Experienced in machine learning and deep learning.</p>
-                                    <p class="text-work">I have done 3 projects: 1. AI prediction
+                                    <p class="text-work">&nbsp; I have done 3 projects: 1. AI prediction
                                         of
                                         glaucoma 2. Face
                                         recognition 3. AI prediction for depression.The third project is a collaboration
@@ -60,7 +60,7 @@
                                     <p class="text-work-header">Experienced in implementing IoT integration with Line
                                         messaging API</p>
 
-                                    <p class="text-work">A system capable of monitoring status,
+                                    <p class="text-work">&nbsp; A system capable of monitoring status,
                                         temperature, humidity, pressure, and can analyze movement and alert users via Line
                                         if pots are moved.
                                         Experienced in using NodeMCU ESP8266 and device to measure temperature,humidity and
@@ -139,6 +139,7 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 5% 10% 0% 20%;
+    border-radius: 8px;
 
 }
 
