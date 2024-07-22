@@ -7,7 +7,7 @@ const router = createRouter({
 	routes: [
 
 		{
-			path: '/',
+			path: '/vue-resume-page/',
 			component: AllPage
 		}
 	],

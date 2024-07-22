@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+:root {
+    --gray: rgb(70, 69, 69);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Lato;
+    transition: 0.5s;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+
+p {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+i {
+    cursor: pointer;
+}
+
+
+.flex-box {
+    display: flex;
+    max-width: 940px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 7% 2% 0% 400px;
+    border-radius: 8px;
+
+}
+
+
+.item_resume_right {
+    display: block;
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.text-work-header {
+    font-family: 'Saira';
+    font-size: 25px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.text-work {
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.resume_right {
+    width: 1000px;
+    background: #fff;
+    padding: 25px;
+}
+
+.resume_right .bold {
+    color: #0bb5f4;
+
+}
+
+.resume_right .resume_work ul,
+.resume_right .resume_education ul {
+    padding-left: 40px;
+    overflow: hidden;
+
+}
+
+.resume_right ul li {
+    position: relative;
+}
+
+.resume_right ul li .date {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resume_right ul li .info {
+    margin-bottom: 20px;
+}
+
+.resume_right ul li:last-child .info {
+    margin-bottom: 0;
+}
+
+.resume_right .resume_work ul li:before,
+.resume_right .resume_education ul li:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 2px solid #0bb5f4;
+}
+
+.resume_right .resume_work ul li:after,
+.resume_right .resume_education ul li:after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -21px;
+    width: 2px;
+    height: 80%;
+    background: #0bb5f4;
+
+}
+
+.resume_right .resume_hobby ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume_right .resume_hobby ul li {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+}
+
+.resume_right .resume_hobby ul li i {
+    font-size: 30px;
+}
+
+.resume_right .resume_hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: -52px;
+    width: 50px;
+    height: 2px;
+    background: #0bb5f4;
+}
+
+.resume_right .resume_hobby ul li:last-child:before {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-box {
+        width: 400px;
+        margin: 17% 4% 0% 5%;
+    }
+}
