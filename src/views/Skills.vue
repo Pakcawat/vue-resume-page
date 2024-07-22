@@ -1,5 +1,6 @@
 <template>
-    <div class="grid">
+    
+    <div class="grid-skill">
         <div class="item">
             <p class="text-work-header" style="font-size: 40px;text-decoration: underline;">SKILLS
             </p>
@@ -46,28 +47,41 @@
 </template>
 
 <style>
-.grid {
+
+.grid-skill {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
-    align-items: stretch;
-    column-gap: 20px;
-    row-gap: 20px;
-    margin: 3% 0% 0% 20%;
-    background-color:  rgb(150, 234, 255);
-    border: 5px solid rgb(0, 0, 0);
-    padding: 100px;
+    max-width: 940px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+	margin: 7% 2% 0% 400px;
 
 }
 
 .content {
     color: #242424;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     border: solid 2px rgb(0, 0, 0);
     box-sizing: border-box;
     height: 100%;
     padding: 10px;
     border-radius: 26px;
+}
+.item {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Lato';
+    font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .grid-skill {
+        margin: 17% 24% 0% 25%;
+    }
 }
 </style>

@@ -10,34 +10,33 @@
 				<span class="text">Skills</span></router-link></li>
 		<li><router-link to="/hobbies" class="button"> <span class="material-icons">favorite</span>
 				<span class="text">Hobbies</span></router-link></li>
-		<li><router-link to="/contact" class="button"> <span class="material-icons">group</span>
-				<span class="text">Contact</span></router-link></li>
 	</ul>
 	<aside>
 		<div class="logo">
 			<img :src="logoURL" alt="Vue" />
-			<h3 style="font-size: 18px; margin-left: 6%;" >PAKCAWAT ISSARAWISARNPOL</h3>
+			<h3 style="font-size: 15px; margin-left: 6%;font-family: 'Lato';" >PAKCAWAT ISSARAWISARNPOL  (Nice)</h3>
+			<h4 style="font-size: 15px; margin-left: 6%;font-family: 'Lato';" >ภัควัฒน์ อิสระวิศาลพล (ไนซ์)</h4>
 		</div>
 
 		<!--url sidebar-->
 		<div class="menu">
-			<div class="item"> <router-link to="/about" class="button">
+			<div class="item-sidebar"> <router-link to="/about" class="button">
 					<span class="material-icons">description</span>
 					<span class="text">About</span>
 				</router-link></div>
-			<div class="item"> <router-link to="/education" class="button">
+			<div class="item-sidebar"> <router-link to="/education" class="button">
 					<span class="material-icons">school</span>
 					<span class="text">Education</span>
 				</router-link></div>
-			<div class="item"> <router-link to="/work_experience" class="button">
+			<div class="item-sidebar"> <router-link to="/work_experience" class="button">
 					<span class="material-icons">work</span>
 					<span class="text">Work Experience</span>
 				</router-link></div>
-			<div class="item"> <router-link to="/skills" class="button">
+			<div class="item-sidebar"> <router-link to="/skills" class="button">
 					<span class="material-icons">lightbulb_outline</span>
 					<span class="text">Skills</span>
 				</router-link> </div>
-			<div class="item"> <router-link to="/hobbies" class="button">
+			<div class="item-sidebar"> <router-link to="/hobbies" class="button">
 					<span class="material-icons">favorite</span>
 					<span class="text">Hobbies</span>
 				</router-link></div>
@@ -62,15 +61,23 @@ ul {
 	margin: 0;
 	overflow: hidden;
 	background-color: rgb(33, 34, 41);
-	position: fixed;
+	position:fixed;
 	top: 0;
 	width: 100%;
 	display: none;
+
+	.material-icons {
+
+		color: white;
+		transition: 0.2s ease-in-out;
+		margin-right: 0.5rem;
+	}
 
 }
 
 li {
 	float: left;
+	margin-left: 10px;
 
 }
 
@@ -79,6 +86,7 @@ li a {
 	color: var(--light);
 	text-decoration: none;
 	padding: 7px;
+
 }
 
 li a:hover:not(.active) {
@@ -95,14 +103,13 @@ aside {
 	color: var(--light);
 	width: var(--sidebar-width);
 
-	//width: calc(2rem + 32px);
 	overflow: hidden;
 	min-height: 100vh;
 	padding: 0;
 	margin: 0;
 	transition: 0.2s ease-in-out;
 
-	div .item:hover:not(.active) {
+	div .item-sidebar:hover:not(.active) {
 		background-color: #636363;
 	}
 
@@ -114,7 +121,7 @@ aside {
 			width: 90%;
 			height: 90%;
 			border-radius: 60%;
-			margin: 3rem 2rem 2rem 1rem;
+			margin: 6rem 1rem 2rem 1rem;
 			padding: 10px;
 			border-style: solid;
 			background-repeat: no-repeat;
@@ -128,11 +135,21 @@ aside {
 		}
 
 		h3 {
+			text-align: center;
 			color: white;
 			font-size: 0.9875rem;
 			margin-bottom: 0.5rem;
 			text-transform: uppercase;
-			margin: 0rem -2rem 3rem 2rem;
+			margin: 0rem 1rem 1rem 2rem;
+
+		}
+		h4 {
+			text-align: center;
+			color: white;
+			font-size: 0.7875rem;
+			margin-bottom: 0.5rem;
+			text-transform: uppercase;
+			margin: 0rem 0rem 0rem 2rem;
 
 		}
 	}
@@ -168,13 +185,23 @@ aside {
 	}
 }
 
+.item-sidebar{
+    width: 100%;
+    padding: 5px;
+    font-family: 'Lato';
+	font-size: medium;
+	border-bottom: 1px solid white;
+
+}
+
 @media screen and (max-width: 700px) {
 	aside {
 		display: none;
+		
 	}
 
 	ul {
-		display: inline-block;
+		display: block;
 	}
 }
 </style>

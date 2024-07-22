@@ -6,71 +6,107 @@
                     <div class="resume_item resume_work">
                         <div class="title">
                             <div>
-                                <p class="text-work-header" style="font-size: 40px;text-decoration: underline;">WORK EXPERIENCE</p>
+                                <p class="text-work-header" style="font-size: 40px;text-decoration: underline;">WORK
+                                    EXPERIENCE</p>
                             </div>
-                            <hr>
+
                         </div>
                         <ul>
                             <li>
-                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">PERSONAL PROJECT</div>
+                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">PERSONAL
+                                    PROJECT</div>
                                 <div class="item_resume_right">
                                     <p class="text-work-header">Responsibilities: IT Developer</p>
-                                    <p class="text-work">&nbsp; Local website with spring boot framework. A website that has a
+                                    <p class="text-work">&nbsp; Local website with spring boot framework. A website that has
+                                        a
                                         system for registering and
                                         verifying your
                                         identity via email and has a function that can store user data in SQL, show data for
                                         each user.</p>
                                 </div>
                             </li>
-                            <hr>
-                            <li>
-                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">INTERNSHIP</div>
-                                <div class="item_resume_right">
-                                    <p class="text-work-header">Responsibilities: IT Developer</p>
-                                    <p class="text-work">&nbsp; The work is a find the coordinates of the various stores from the
-                                        API and develop a website
-                                        that can show
-                                        the
-                                        location of the store, such as 7-11, Big C, etc. That can see an overview of the
-                                        stores in website and can
-                                        analyze commercial competition so as not to have too much monopoly.
-                                        Office of Trade Competition Commission
-                                        (OTCC / สำนักงานคณะกรรมการการแข่งขันทางการค้า)</p>
-                                </div>
-                            </li>
-                            <hr>
-                            <li>
-                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">DURING UNIVERSITY</div>
-                                <div class="item_resume_right">
-                                    <p class="text-work-header">Experienced in machine learning and deep learning.</p>
-                                    <p class="text-work">&nbsp; I have done 3 projects: 1. AI prediction
-                                        of
-                                        glaucoma 2. Face
-                                        recognition 3. AI prediction for depression.The third project is a collaboration
-                                        with a doctor from Siriraj
-                                        and
-                                        a linguist. If this project is successfully developed, it will be implemented in
-                                        practice to help relieve
-                                        the
-                                        workload of doctors</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="item_resume_right">
-                                    <p class="text-work-header">Experienced in implementing IoT integration with Line
-                                        messaging API</p>
 
-                                    <p class="text-work">&nbsp; A system capable of monitoring status,
-                                        temperature, humidity, pressure, and can analyze movement and alert users via Line
-                                        if pots are moved.
-                                        Experienced in using NodeMCU ESP8266 and device to measure temperature,humidity and
-                                        electric current in
-                                        Datacenter of the faculty and can be displayed in Line chatbot and stored in
-                                        database which can be viewed as
-                                        a graph via chatbots.</p>
+                            <li>
+                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">INTERNSHIP
+                                </div>
+                                <div class="item_resume_right">
+
+                                    <p class="text-work-header">Office of Trade Competition Commission
+                                        (OTCC / สำนักงานคณะกรรมการการแข่งขันทางการค้า) Responsibilities: IT Developer </p>
+
+                                    <p class="text-work">&nbsp;
+                                        The work is a find the coordinates of the various stores from the API and develop a
+                                        website that can show the location of the store, such as 7-11, Big C, etc. That can
+                                        see an overview of the stores on the website and can analyze commercial competition
+                                        so as not to have too much monopoly.</p>
                                 </div>
                             </li>
-                            <hr>
+
+                            <li>
+                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">DURING
+                                    UNIVERSITY</div>
+                                <div class="item_resume_right">
+                                    <p class="text-work-header">AI prediction of glaucoma</p>
+                                    <p class="text-work">&nbsp; This work is a work in the course to build a model that can
+                                        be classified into 3 classes normal, other and glaucoma. To find the dataset we will
+                                        find it from the internet and bring it to the Data Augmentation by various methods
+                                        such as grayscale roi( region of interest ) and clean dataset and bring it to train
+                                        in deep learning</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text-work-header" style="text-decoration: underline;font-size: 30px;">DURING
+                                    UNIVERSITY</div>
+                                <div class="item_resume_right">
+                                    <p class="text-work-header">AI prediction of glaucoma</p>
+                                    <p class="text-work">&nbsp; This work is a work in the course to build a model that can
+                                        be classified into 3 classes normal, other and glaucoma. To find the dataset we will
+                                        find it from the internet and bring it to the Data Augmentation by various methods
+                                        such as grayscale roi( region of interest ) and clean dataset and bring it to train
+                                        in deep learning</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item_resume_right">
+                                    <p class="text-work-header">Face recognition</p>
+
+                                    <p class="text-work">&nbsp;This work is a job in the course to build a model that can
+                                        classify who is and is in a class or not. To find the dataset we will find a person
+                                        in the class, which people in the class who takes pictures of themselves from
+                                        different angles and brings them to data augmentation using various methods such as
+                                        cropface, rotate, and train them in deep learning.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item_resume_right" id="skills1">
+                                    <p class="text-work-header">AI prediction for depression</p>
+
+                                    <p class="text-work">&nbsp;This work is a coursework. Make a model that can distinguish
+                                        classes whether it's depression or not. To find the dataset, we will take from the
+                                        patient in the hospital to answer the questions and record the sound. Then Speech to
+                                        Text is applied with ASR and stored in the dataset. Then it is put in train in Lstm.
+                                        This project is a collaboration with a doctor from Siriraj and a linguist. If this
+                                        project is successfully developed, it will be implemented in practice to help
+                                        relieve the workload of doctors.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item_resume_right">
+                                    <p class="text-work-header">My project smart datacenter</p>
+
+                                    <p class="text-work">&nbsp;This work is my project. The topic is smart data centers. The
+                                        purpose is to be able to recognize various data in the data center room via line
+                                        chatbot. Use NodeMCU ESP8266 and various devices to measure temperature, humidity,
+                                        and electric current in datacenter of the faculty can display various values in Line
+                                        chatbot and store various values in the database which can be viewed as a graph via
+                                        chatbots and has received suggestions for adding various features from users such as
+                                        alerts in line chatbot when over temperature in the datacenter room, face
+                                        recognition in the raspberry pi to detect who came in and notify in Line chatbot.
+                                    </p>
+                                </div>
+                            </li>
+
+
                         </ul>
                     </div>
                 </div>
@@ -100,12 +136,6 @@ body {
     background-color: #ffffff;
 }
 
-.wrapper {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 20px;
-    /* border: 1px solid red; */
-}
 
 p {
     color: var(--gray);
@@ -122,36 +152,20 @@ i {
     cursor: pointer;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
 .flex-box {
     display: flex;
+    max-width: 940px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 5% 10% 0% 20%;
+    margin: 7% 2% 0% 400px;
     border-radius: 8px;
 
 }
 
-.item {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
-    font-family: 'Lato';
-	font-size: 20px;
-
-}
 
 .item_resume_right {
     display: block;
@@ -180,12 +194,14 @@ hr {
 
 .resume_right .bold {
     color: #0bb5f4;
+
 }
 
 .resume_right .resume_work ul,
 .resume_right .resume_education ul {
     padding-left: 40px;
     overflow: hidden;
+
 }
 
 .resume_right ul li {
@@ -227,6 +243,7 @@ hr {
     width: 2px;
     height: 80%;
     background: #0bb5f4;
+
 }
 
 .resume_right .resume_hobby ul {
@@ -259,5 +276,12 @@ hr {
 
 .resume_right .resume_hobby ul li:last-child:before {
     display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .flex-box {
+        width: 400px;
+        margin: 17% 4% 0% 5%;
+    }
 }
 </style>
