@@ -2,12 +2,6 @@
 import { VuePreloader } from 'vue-preloader';
 import "../../node_modules/vue-preloader/dist/style.css"
 import "../../style/Allabout.css"
-import "../../style/Education.css"
-import "../../style/Work.css"
-import "../../style/Skill.css"
-import "../../style/Hobbies.css"
-import "../../style/Contact.css"
-import { ref } from 'vue';
 </script>
 
 <template>
