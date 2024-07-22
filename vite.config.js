@@ -15,6 +15,6 @@ export default defineConfig({
       }
     }
   },
-  base: '/',
+  base: '/vue-resume-page/',
   plugins: [vue()],
 })
